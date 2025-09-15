@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AILearnX - Master AI with AI | The Ultimate Student AI Resource Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <div class="nav__logo">🤖</div>
+                <span class="nav__title">AILearnX</span>
+            </div>
+            <div class="nav__menu" id="navMenu">
+                <a href="#home" class="nav__link active">Home</a>
+                <a href="#courses" class="nav__link">Courses</a>
+                <a href="#ai-tools" class="nav__link">AI Tools Hub</a>
+                <a href="#workflow-studio" class="nav__link">Workflow Studio</a>
+                <a href="#student-resources" class="nav__link nav__link--highlight">Student Resources</a>
+                <a href="#progress" class="nav__link">Progress</a>
+                <a href="#community" class="nav__link">Community</a>
+            </div>
+            <div class="nav__search">
+                <input type="text" placeholder="Search courses, tools..." class="form-control nav__search-input">
+            </div>
+            <div class="nav__auth">
+                <button class="btn btn--outline btn--sm" id="loginBtn">Login</button>
+                <button class="btn btn--primary btn--sm" id="signupBtn">Sign Up</button>
+            </div>
+            <button class="nav__toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero__background"></div>
+        <div class="container">
+            <div class="hero__content">
+                <div class="student-banner">
+                    <div class="banner__icon">🎓</div>
+                    <div class="banner__text">
+                        <span class="banner__highlight">Students Save $200K+</span>
+                        <span class="banner__subtitle">Free AI tools, courses & exclusive offers</span>
+                    </div>
+                </div>
+                <h1 class="hero__title">Master AI with AI</h1>
+                <p class="hero__subtitle">The Ultimate AI Learning & Student Resource Hub</p>
+                <p class="hero__description">Experience personalized education powered by multiple AI models (GPT-5, Claude Opus 4.1, Gemini Pro) plus comprehensive AI tools comparison, workflow automation studio, AND exclusive student resources worth $200,000+. Learn faster, understand deeper, and build smarter with our revolutionary platform.</p>
+                <div class="hero__actions">
+                    <button class="btn btn--primary btn--lg" id="startLearningBtn">Start Learning Now</button>
+                    <button class="btn btn--outline btn--lg" id="exploreStudentResourcesBtn">Explore Student Resources</button>
+                </div>
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">50,000+</span>
+                        <span class="hero__stat-label">Students</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">$200K+</span>
+                        <span class="hero__stat-label">Student Savings</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">20+</span>
+                        <span class="hero__stat-label">AI Tools</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">95%</span>
+                        <span class="hero__stat-label">Success Rate</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__visual">
+                <div class="hero__platform-preview">
+                    <div class="platform-card">
+                        <h4>🧠 Multi-Model AI Tutoring</h4>
+                        <p>GPT-5, Claude Opus 4.1, Gemini Pro</p>
+                    </div>
+                    <div class="platform-card">
+                        <h4>🔧 AI Tools Hub</h4>
+                        <p>Top 20 tools comparison</p>
+                    </div>
+                    <div class="platform-card">
+                        <h4>⚡ Workflow Automation</h4>
+                        <p>Visual n8n studio integration</p>
+                    </div>
+                    <div class="platform-card platform-card--highlight">
+                        <h4>🎓 Student Resources</h4>
+                        <p>$200K+ in free AI tools & courses</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Resources Hub - NEW MAJOR SECTION -->
+    <section class="student-resources" id="student-resources">
+        <div class="container">
+            <div class="section__header-special">
+                <div class="student-badge">
+                    <span class="badge__icon">🎓</span>
+                    <span class="badge__text">Student Resources Hub</span>
+                </div>
+                <h2 class="section__title">Save $200,000+ with Free AI Tools & Education</h2>
+                <p class="section__subtitle">Don't pay full price! Get premium AI tools, world-class courses, and cutting-edge resources completely free as a student.</p>
+                <div class="urgency-banner">
+                    <div class="urgency__content">
+                        <span class="urgency__icon">⚡</span>
+                        <span class="urgency__text">Limited Time: ChatGPT Plus FREE until May 31, Google AI Pro FREE until Oct 6</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Immediate Action Checklist -->
+            <div class="action-checklist">
+                <h3 class="checklist__title">🚀 Take Action Now - Don't Miss Out!</h3>
+                <div class="checklist__grid" id="actionChecklist">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Free Premium AI Tools -->
+            <div class="premium-tools">
+                <h3 class="tools__title">💎 Premium AI Tools - FREE for Students</h3>
+                <div class="tools__grid" id="premiumToolsGrid">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Free Educational Content -->
+            <div class="educational-content">
+                <div class="content__section">
+                    <h3 class="content__title">📚 Top Free Courses (Coursera)</h3>
+                    <div class="courses__list" id="freeCoursesGrid">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="content__section">
+                    <h3 class="content__title">🎥 Essential YouTube Channels</h3>
+                    <div class="youtube__grid" id="youtubeChannelsGrid">
+                        <!-- Will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Free Image Generation Tools -->
+            <div class="image-tools">
+                <h3 class="image-tools__title">🎨 Free Image Generation Tools</h3>
+                <div class="image-tools__grid" id="imageToolsGrid">
+                    <!-- Will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Savings Calculator -->
+            <div class="savings-calculator">
+                <h3 class="calculator__title">💰 Your Potential Savings</h3>
+                <div class="calculator__visual">
+                    <div class="savings__total">
+                        <span class="savings__number">$200,280</span>
+                        <span class="savings__label">Total Value</span>
+                    </div>
+                    <div class="savings__breakdown">
+                        <div class="savings__item">
+                            <span class="savings__tool">ChatGPT Plus (2 months)</span>
+                            <span class="savings__value">$40</span>
+                        </div>
+                        <div class="savings__item">
+                            <span class="savings__tool">Google AI Pro (12 months)</span>
+                            <span class="savings__value">$240</span>
+                        </div>
+                        <div class="savings__item">
+                            <span class="savings__tool">GitHub Student Pack</span>
+                            <span class="savings__value">$200,000+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section__title">Complete AI Learning Ecosystem</h2>
+            <div class="features__grid">
+                <div class="feature__card">
+                    <div class="feature__icon">🧠</div>
+                    <h3 class="feature__title">Multi-Model AI Tutoring</h3>
+                    <p class="feature__description">Learn from GPT-5, Claude Opus 4.1, and Gemini Pro - each bringing unique strengths to your education with specialized expertise.</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">🔧</div>
+                    <h3 class="feature__title">AI Tools Mastery Hub</h3>
+                    <p class="feature__description">Master the top 20 AI tools with comprehensive comparisons, tutorials, and practical integration guides.</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">⚡</div>
+                    <h3 class="feature__title">Workflow Automation Studio</h3>
+                    <p class="feature__description">Build powerful automations with visual n8n workflows, connecting AI models to real-world applications.</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">🎓</div>
+                    <h3 class="feature__title">Student Resources Hub</h3>
+                    <p class="feature__description">Access $200K+ worth of free AI tools, premium courses, and exclusive student offers to accelerate your learning.</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">🏆</div>
+                    <h3 class="feature__title">Industry Certifications</h3>
+                    <p class="feature__description">Earn recognized certificates in AI development, tool mastery, and workflow automation that boost your career prospects.</p>
+                </div>
+                <div class="feature__card">
+                    <div class="feature__icon">🤝</div>
+                    <h3 class="feature__title">Community & Integration</h3>
+                    <p class="feature__description">Connect with learners, share workflows, and get help from our vibrant community of AI practitioners.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Catalog Preview -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">AI Courses with Automation Focus</h2>
+                <div class="course__filters">
+                    <button class="filter__btn active" data-category="all">All</button>
+                    <button class="filter__btn" data-category="Machine Learning">ML</button>
+                    <button class="filter__btn" data-category="Deep Learning">DL</button>
+                    <button class="filter__btn" data-category="Business AI">Business</button>
+                    <button class="filter__btn" data-category="Creative AI">Creative</button>
+                    <button class="filter__btn" data-category="Enterprise AI">Enterprise</button>
+                </div>
+            </div>
+            <div class="courses__grid" id="coursesGrid">
+                <!-- Courses will be populated by JavaScript -->
+            </div>
+            <div class="section__cta">
+                <button class="btn btn--primary" id="viewAllCoursesBtn">View All Courses</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Tools Comparison Hub -->
+    <section class="ai-tools-hub" id="ai-tools">
+        <div class="container">
+            <h2 class="section__title">AI Tools Hub</h2>
+            <p class="section__subtitle">Master the top 20 AI tools with comprehensive comparisons, tutorials, and practical guides</p>
+            
+            <!-- Top 5 Tools Featured Section -->
+            <div class="top-tools">
+                <h3 class="top-tools__title">🏆 Top 5 AI Tools</h3>
+                <div class="top-tools__grid" id="topToolsGrid">
+                    <!-- Top 5 tools will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Tools Filter and Search -->
+            <div class="tools-controls">
+                <div class="tools-search">
+                    <input type="text" placeholder="Search AI tools..." class="form-control" id="toolsSearch">
+                </div>
+                <div class="tools-filters">
+                    <button class="filter__btn active" data-category="all">All Tools</button>
+                    <button class="filter__btn" data-category="AI Assistant">Assistant</button>
+                    <button class="filter__btn" data-category="Automation">Automation</button>
+                    <button class="filter__btn" data-category="Coding">Coding</button>
+                    <button class="filter__btn" data-category="Design">Design</button>
+                    <button class="filter__btn" data-category="Research/Search">Research</button>
+                </div>
+            </div>
+
+            <!-- All Tools Grid -->
+            <div class="tools-grid" id="toolsGrid">
+                <!-- All 20 tools will be populated by JavaScript -->
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="tools-comparison">
+                <h3 class="comparison__title">📊 Complete Tools Comparison</h3>
+                <div class="comparison-table-wrapper">
+                    <table class="comparison-table" id="comparisonTable">
+                        <!-- Table will be populated by JavaScript -->
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Automation Studio -->
+    <section class="workflow-studio" id="workflow-studio">
+        <div class="container">
+            <h2 class="section__title">Workflow Automation Studio</h2>
+            <p class="section__subtitle">Build powerful AI-driven workflows with visual n8n integration and pre-built templates</p>
+            
+            <!-- Workflow Templates -->
+            <div class="workflow-templates">
+                <h3 class="templates__title">⚡ Pre-built Automation Templates</h3>
+                <div class="templates__grid" id="templatesGrid">
+                    <!-- Templates will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <!-- Visual Workflow Builder Demo -->
+            <div class="workflow-builder">
+                <h3 class="builder__title">🎨 Visual Workflow Builder</h3>
+                <div class="builder__canvas">
+                    <div class="workflow-demo">
+                        <div class="workflow-node workflow-node--trigger">
+                            <div class="node__icon">⚡</div>
+                            <div class="node__info">
+                                <h4>Trigger</h4>
+                                <p>New Student Registration</p>
+                            </div>
+                        </div>
+                        <div class="workflow-connection"></div>
+                        <div class="workflow-node workflow-node--ai">
+                            <div class="node__icon">🧠</div>
+                            <div class="node__info">
+                                <h4>AI Processing</h4>
+                                <p>GPT-5 Skill Assessment</p>
+                            </div>
+                        </div>
+                        <div class="workflow-connection"></div>
+                        <div class="workflow-node workflow-node--decision">
+                            <div class="node__icon">🔀</div>
+                            <div class="node__info">
+                                <h4>Decision</h4>
+                                <p>Route by Skill Level</p>
+                            </div>
+                        </div>
+                        <div class="workflow-connection workflow-connection--branch"></div>
+                        <div class="workflow-node workflow-node--output">
+                            <div class="node__icon">🏆</div>
+                            <div class="node__info">
+                                <h4>Output</h4>
+                                <p>Personalized Curriculum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="builder__controls">
+                        <button class="btn btn--primary" id="runWorkflowBtn">▶ Run Workflow</button>
+                        <button class="btn btn--outline" id="editWorkflowBtn">✏️ Edit Workflow</button>
+                        <button class="btn btn--outline" id="saveTemplateBtn">💾 Save Template</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Workflow Integration Showcase -->
+            <div class="workflow-integration">
+                <h3 class="integration__title">🔗 AI Model Integration</h3>
+                <div class="integration__models">
+                    <div class="integration__model">
+                        <div class="model__icon">🧠</div>
+                        <h4>GPT-5</h4>
+                        <p>Advanced reasoning and content generation</p>
+                        <span class="status status--success">Integrated</span>
+                    </div>
+                    <div class="integration__model">
+                        <div class="model__icon">⚡</div>
+                        <h4>Claude Opus 4.1</h4>
+                        <p>Technical analysis and code generation</p>
+                        <span class="status status--success">Integrated</span>
+                    </div>
+                    <div class="integration__model">
+                        <div class="model__icon">💎</div>
+                        <h4>Gemini Pro</h4>
+                        <p>Multimodal processing and understanding</p>
+                        <span class="status status--success">Integrated</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Tutor Demo -->
+    <section class="ai-demo" id="ai-tutors">
+        <div class="container">
+            <h2 class="section__title">Experience Multi-Model AI Tutoring</h2>
+            <div class="ai-demo__container">
+                <div class="ai-demo__models">
+                    <button class="ai-model__btn active" data-model="gpt5">
+                        <div class="ai-model__icon">🧠</div>
+                        <div class="ai-model__info">
+                            <h4>GPT-5</h4>
+                            <p>Advanced reasoning</p>
+                        </div>
+                    </button>
+                    <button class="ai-model__btn" data-model="claude">
+                        <div class="ai-model__icon">⚡</div>
+                        <div class="ai-model__info">
+                            <h4>Claude Opus 4.1</h4>
+                            <p>Technical expertise</p>
+                        </div>
+                    </button>
+                    <button class="ai-model__btn" data-model="gemini">
+                        <div class="ai-model__icon">💎</div>
+                        <div class="ai-model__info">
+                            <h4>Gemini Pro</h4>
+                            <p>Multimodal learning</p>
+                        </div>
+                    </button>
+                </div>
+                <div class="chat__container">
+                    <div class="chat__messages" id="chatMessages">
+                        <div class="chat__message chat__message--user">
+                            <div class="chat__avatar">👤</div>
+                            <div class="chat__content">How can I get started with AI tools as a student without spending money?</div>
+                        </div>
+                        <div class="chat__message chat__message--ai">
+                            <div class="chat__avatar">🧠</div>
+                            <div class="chat__content" id="aiResponse">
+                                Perfect question for students! You can save over $200K with our Student Resources Hub. Start with ChatGPT Plus (2 months FREE), get Google AI Pro (12 months FREE), and apply for GitHub Student Developer Pack ($200K+ value). Also access free Coursera courses, YouTube tutorials, and unlimited image generation tools. The key is leveraging your student status - these offers won't last forever!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="chat__input">
+                        <input type="text" placeholder="Ask about AI, workflows, or student resources..." class="form-control" id="chatInput">
+                        <button class="btn btn--primary" id="sendMessage">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Plans -->
+    <section class="pricing">
+        <div class="container">
+            <h2 class="section__title">Choose Your AI Mastery Journey</h2>
+            <div class="pricing__grid" id="pricingGrid">
+                <!-- Pricing plans will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Dashboard Preview -->
+    <section class="progress-preview" id="progress">
+        <div class="container">
+            <h2 class="section__title">Track Your Complete AI Journey</h2>
+            <div class="dashboard__preview">
+                <div class="dashboard__visual">
+                    <div class="progress-card">
+                        <h4>📊 Learning Analytics</h4>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 73%"></div>
+                        </div>
+                        <p>Course Progress: 73%</p>
+                    </div>
+                    <div class="progress-card">
+                        <h4>🔧 Tools Mastered</h4>
+                        <div class="tools-mastered">
+                            <span class="tool-badge">ChatGPT ✓</span>
+                            <span class="tool-badge">Claude ✓</span>
+                            <span class="tool-badge">n8n ✓</span>
+                            <span class="tool-badge">+12 more</span>
+                        </div>
+                    </div>
+                    <div class="progress-card">
+                        <h4>⚡ Workflows Built</h4>
+                        <div class="workflow-count">
+                            <span class="workflow-number">8</span>
+                            <span class="workflow-label">Active Automations</span>
+                        </div>
+                    </div>
+                    <div class="progress-card">
+                        <h4>💰 Student Savings</h4>
+                        <div class="savings-count">
+                            <span class="savings-number">$200K+</span>
+                            <span class="savings-label">Tools Unlocked</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard__stats">
+                    <div class="stat__card">
+                        <div class="stat__icon">🎯</div>
+                        <div class="stat__info">
+                            <h4>Integrated Learning</h4>
+                            <p>Track progress across courses, tools mastery, student resources, and workflow creation in one unified dashboard</p>
+                        </div>
+                    </div>
+                    <div class="stat__card">
+                        <div class="stat__icon">🏅</div>
+                        <div class="stat__info">
+                            <h4>Student Achievement System</h4>
+                            <p>Unlock badges for claiming free tools, completing workflows, and maximizing student resource value</p>
+                        </div>
+                    </div>
+                    <div class="stat__card">
+                        <div class="stat__icon">📈</div>
+                        <div class="stat__info">
+                            <h4>Career Impact Tracking</h4>
+                            <p>Monitor ROI from free student resources and track how $200K+ in tools accelerated your career</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="testimonials" id="community">
+        <div class="container">
+            <h2 class="section__title">Student Success Stories</h2>
+            <div class="testimonials__grid" id="testimonialsGrid">
+                <!-- Testimonials will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <div class="footer__brand">
+                        <div class="footer__logo">🤖</div>
+                        <h3>AILearnX</h3>
+                        <p>The complete AI learning ecosystem with integrated tools mastery, workflow automation, and exclusive student resources worth $200K+.</p>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="#courses">AI Courses</a></li>
+                        <li><a href="#ai-tools">Tools Hub</a></li>
+                        <li><a href="#workflow-studio">Workflow Studio</a></li>
+                        <li><a href="#student-resources">Student Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Student Resources</h4>
+                    <ul>
+                        <li><a href="https://chatgpt.com/students" target="_blank">ChatGPT Plus FREE</a></li>
+                        <li><a href="https://gemini.google/students" target="_blank">Google AI Pro FREE</a></li>
+                        <li><a href="https://education.github.com" target="_blank">GitHub Student Pack</a></li>
+                        <li><a href="https://coursera.org/learn/ai-for-everyone" target="_blank">Free AI Courses</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Free Tools</h4>
+                    <ul>
+                        <li><a href="https://raphaelai.org" target="_blank">Raphael AI - Free</a></li>
+                        <li><a href="https://vheer.com" target="_blank">Vheer - Unlimited</a></li>
+                        <li><a href="https://freepik.com" target="_blank">Freepik AI</a></li>
+                        <li><a href="https://canva.com" target="_blank">Canva AI</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Connect</h4>
+                    <div class="footer__social">
+                        <a href="#" target="_blank">Twitter</a>
+                        <a href="#" target="_blank">LinkedIn</a>
+                        <a href="#" target="_blank">GitHub</a>
+                        <a href="#" target="_blank">Discord</a>
+                    </div>
+                    <div class="footer__newsletter">
+                        <h5>Newsletter</h5>
+                        <div class="newsletter__form">
+                            <input type="email" placeholder="Enter your email" class="form-control">
+                            <button class="btn btn--primary btn--sm">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 AILearnX. All rights reserved. Empowering students with $200K+ in free AI tools, comprehensive education, and career-changing opportunities.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal hidden" id="courseModal">
+        <div class="modal__backdrop" id="modalBackdrop"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 id="modalCourseTitle">Course Title</h3>
+                <button class="modal__close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal__body">
+                <div id="modalCourseContent">
+                    <!-- Course content will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal hidden" id="toolModal">
+        <div class="modal__backdrop" id="toolModalBackdrop"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 id="modalToolTitle">Tool Details</h3>
+                <button class="modal__close" id="toolModalClose">&times;</button>
+            </div>
+            <div class="modal__body">
+                <div id="modalToolContent">
+                    <!-- Tool content will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal hidden" id="workflowModal">
+        <div class="modal__backdrop" id="workflowModalBackdrop"></div>
+        <div class="modal__content modal__content--large">
+            <div class="modal__header">
+                <h3 id="modalWorkflowTitle">Workflow Template</h3>
+                <button class="modal__close" id="workflowModalClose">&times;</button>
+            </div>
+            <div class="modal__body">
+                <div id="modalWorkflowContent">
+                    <!-- Workflow content will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal hidden" id="authModal">
+        <div class="modal__backdrop" id="authModalBackdrop"></div>
+        <div class="modal__content modal__content--auth">
+            <div class="modal__header">
+                <h3 id="authModalTitle">Login</h3>
+                <button class="modal__close" id="authModalClose">&times;</button>
+            </div>
+            <div class="modal__body">
+                <form id="authForm">
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Continue</button>
+                </form>
+                <div class="auth__switch">
+                    <p>Don't have an account? <a href="#" id="authSwitchLink">Sign up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
